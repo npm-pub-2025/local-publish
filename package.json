@@ -1,0 +1,12 @@
+{
+  "name": "@npmpub2025/local-publish",
+  "version": "0.0.1",
+  "description": "A test package to demonstrate local publishing",
+  "license": "ISC",
+  "author": "Wes Todd <wes@wesleytodd.com>",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "node index.mjs | grep -q 'testing'",
+    "release": "npm test && npm version \"${1:-patch}\" && npm publish --access=public --tag=\"${2:-latest}\" && git push --follow-tags"
+  }
+}
