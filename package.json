@@ -1,6 +1,6 @@
 {
   "name": "@npmpub2025/local-publish",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A test package to demonstrate local publishing",
   "license": "ISC",
   "author": "Wes Todd <wes@wesleytodd.com>",
