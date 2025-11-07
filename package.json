@@ -9,6 +9,6 @@
     "test": "node index.mjs | grep -q 'testing'",
     "prerelease": "npm test && npm version \"${1:-patch}\" && npm login",
     "release": "npm version \"${1:-patch}\" && npm publish --access=public --tag=\"${2:-latest}\" ",
-    "postrelease": "(npm logout || true) && git push --follow-tags && gh release create --draft"
+    "postrelease": "(npm logout || true) && git push --follow-tags && gh release create --draft --generate-notes \"v$(cat package.json | jq .version)\""
   }
 }
