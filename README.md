@@ -69,9 +69,14 @@ After publishing:
 
 ## Tips for Secure Local Publishing
 
-- Always log out of npm after publishing.  
-- Avoid using long-lived tokens on local machines.  
-- Use `.npmrc` carefully; avoid storing secrets or tokens in plain text.  
+**Always log out after publishing**
+
+When logging into npm via `npm login` you will be given an npm Classic Token. This is a long lived token (no expiration) that is stored in your `~/.npmrc` file in plain text. Generally this is considered bad practice because it is a well known and easily readable file in case your local machine is compromised. Running `npm logout` does two things:
+
+1. Removed your local token from `.npmrc`
+2. Deletes the token from the registry
+
+Taking these two steps ensures that you only have a token on your system for the short period of time you need it and reduces the risk of an attacker being able to steal it.
 
 ## This Example Is Opinionated
 
