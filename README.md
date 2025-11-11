@@ -23,7 +23,6 @@ The most important security steps are:
 Before you begin, make sure you have:
 - Node.js and npm installed  
 - Access to your npm account with 2FA enabled  
-- Proper permissions to publish the package
 
 ## Step 1. Enable and Require 2FA
 
