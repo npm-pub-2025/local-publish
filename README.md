@@ -13,7 +13,8 @@ While setup is straightforward, you should confirm a few important configuration
 
 The most important security steps are:
 - Enable **2FA** on your npm account  
-- Enable **Require 2FA for all write actions**  
+- Enable **Require 2FA for all write actions** for your account
+- Require 2FA for publish on the package settings
 - Always **log out** from the npm CLI once you are done with your release(s)
 
 
