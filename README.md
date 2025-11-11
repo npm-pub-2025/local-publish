@@ -66,7 +66,7 @@ npm run release [version] [tag]
 After publishing:
 - Check your package on [npmjs.com](https://www.npmjs.com/)  
 - Verify your dist tags and version history  
-- Confirm the GitHub release draft looks correct  
+- Confirm the GitHub release draft looks correct, and publish it
 
 ## Tips for Secure Local Publishing
 
