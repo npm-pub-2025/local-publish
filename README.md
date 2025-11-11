@@ -48,7 +48,7 @@ All release steps are defined in the project’s `package.json` scripts.
 To run a release, use:
 
 ```bash
-npm run release [version] [tag]
+$ npm run release [version] [tag]
 ```
 ### What this workflow does
 
